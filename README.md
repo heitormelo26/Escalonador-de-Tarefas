@@ -3,7 +3,7 @@ O sistema simula o processo de escalonador de Tarefa presente em um processador.
 Esse escalonador escalona as tarefas baseado na prioridade desta e no tempo de execução que leva para finalizar tal processo <br/>
 Um processo com x tempo de processo, após ser tratada pelo processador esse tempo descerá para x-1.<br/><br/>
 
-<h1> Exemplo de execução para 10 processos criados.<h1/>
+<h1> Exemplo de execução para 10 processos criados.</h1>
 
 Fila de Prontos: (PROCESS ID || PRIORIDADE || TEMPO ) <br/>
  0 || 1 || 1 <br/>
