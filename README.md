@@ -4,139 +4,139 @@ Esse escalonador escalona as tarefas baseado na prioridade desta e no tempo de e
 Um processo com x tempo de processo, após ser tratada pelo processador esse tempo descerá para x-1.<br/><br/>
 
 <h1> Exemplo de execução para 10 processos criados.</h1>
-
-Fila de Prontos: (PROCESS ID || PRIORIDADE || TEMPO )
- 0 || 7 || 1
- 1 || 3 || 2
- 2 || 9 || 1
- 3 || 4 || 4
- 4 || 10 || 3
- 5 || 7 || 4
- 6 || 14 || 4
- 7 || 7 || 4
- 8 || 11 || 3
- 9 || 3 || 2
-
-Esvaziando fila de prontos e carregando escalonador...
-
-Tabela de Escalonamento(INICIAL): (NIVEL PRIORIDADE: PROCESS ID)
-0: NULL
-1: NULL
-2: NULL
-3: 1 -> 9
-4: 3
-5: NULL
-6: NULL
-7: 0 -> 5 -> 7
-8: NULL
-9: 2
-10: 4
-11: 8
-12: NULL
-13: NULL
-14: 6
-15: NULL
-
-Comecar execucao dos processos...
-Quantos processos vao ser executados? 2
-Processo executado: 1
-Escolha =  0
-Continuou no escalonador(vai para o fina da fila)
-
-ESCALONADOR (POS EXECUCAO):
-0: NULL
-1: NULL
-2: NULL
-3: 9 -> 1
-4: 3
-5: NULL
-6: NULL
-7: 0 -> 5 -> 7
-8: NULL
-9: 2
-10: 4
-11: 8
-12: NULL
-13: NULL
-14: 6
-15: NULL
-Processo executado: 9
-Escolha =  0
-Continuou no escalonador(vai para o fina da fila)
-
-ESCALONADOR (POS EXECUCAO):
-0: NULL
-1: NULL
-2: NULL
-3: 1 -> 9
-4: 3
-5: NULL
-6: NULL
-7: 0 -> 5 -> 7
-8: NULL
-9: 2
-10: 4
-11: 8
-12: NULL
-13: NULL
-14: 6
-15: NULL
-
- APOS EXECUCAO
-
-Tabela de Escalonamento: (NIVEL PRIORIDADE: PROCESS ID)
-0: NULL
-1: NULL
-2: NULL
-3: 1 -> 9
-4: 3
-5: NULL
-6: NULL
-7: 0 -> 5 -> 7
-8: NULL
-9: 2
-10: 4
-11: 8
-12: NULL
-13: NULL
-14: 6
-15: NULL
-
-Tabela de IO: (DISPOSITIVO: PROCESS ID)
-0: NULL
-1: NULL
-2: NULL
-3: NULL
-4: NULL
-5: NULL
-6: NULL
-7: NULL
-
-TERMINAR O I0:
-Escalonador (FINAL) POS LIBERACAO DE IO:
-0: NULL
-1: NULL
-2: NULL
-3: 1 -> 9
-4: 3
-5: NULL
-6: NULL
-7: 0 -> 5 -> 7
-8: NULL
-9: 2
-10: 4
-11: 8
-12: NULL
-13: NULL
-14: 6
-15: NULL
-
-IO:
-0: NULL
-1: NULL
-2: NULL
-3: NULL
-4: NULL
-5: NULL
-6: NULL
-7: NULL
+<br/>
+Fila de Prontos: (PROCESS ID || PRIORIDADE || TEMPO )<br/>
+ 0 || 7 || 1<br/>
+ 1 || 3 || 2<br/>
+ 2 || 9 || 1<br/>
+ 3 || 4 || 4<br/>
+ 4 || 10 || 3<br/>
+ 5 || 7 || 4<br/>
+ 6 || 14 || 4<br/>
+ 7 || 7 || 4<br/>
+ 8 || 11 || 3<br/>
+ 9 || 3 || 2<br/>
+<br/>
+Esvaziando fila de prontos e carregando escalonador...<br/>
+<br/>
+Tabela de Escalonamento(INICIAL): (NIVEL PRIORIDADE: PROCESS ID)<br/>
+0: NULL<br/>
+1: NULL<br/>
+2: NULL<br/>
+3: 1 -> 9<br/>
+4: 3<br/>
+5: NULL<br/>
+6: NULL<br/>
+7: 0 -> 5 -> 7<br/>
+8: NULL<br/>
+9: 2<br/>
+10: 4<br/>
+11: 8<br/>
+12: NULL<br/>
+13: NULL<br/>
+14: 6<br/>
+15: NULL<br/>
+<br/>
+Comecar execucao dos processos...<br/>
+Quantos processos vao ser executados? 2<br/>
+Processo executado: 1<br/>
+Escolha =  0<br/>
+Continuou no escalonador(vai para o fina da fila)<br/>
+<br/>
+ESCALONADOR (POS EXECUCAO):<br/>
+0: NULL<br/>
+1: NULL<br/>
+2: NULL<br/>
+3: 9 -> 1<br/>
+4: 3<br/>
+5: NULL<br/>
+6: NULL<br/>
+7: 0 -> 5 -> 7<br/>
+8: NULL<br/>
+9: 2<br/>
+10: 4<br/>
+11: 8<br/>
+12: NULL<br/>
+13: NULL<br/>
+14: 6<br/>
+15: NULL<br/>
+Processo executado: 9<br/>
+Escolha =  0<br/>
+Continuou no escalonador(vai para o fina da fila)<br/>
+<br/>
+ESCALONADOR (POS EXECUCAO):<br/>
+0: NULL<br/>
+1: NULL<br/>
+2: NULL<br/>
+3: 1 -> 9<br/>
+4: 3<br/>
+5: NULL<br/>
+6: NULL<br/>
+7: 0 -> 5 -> 7<br/>
+8: NULL<br/>
+9: 2<br/>
+10: 4<br/>
+11: 8<br/>
+12: NULL<br/>
+13: NULL<br/>
+14: 6<br/>
+15: NULL<br/>
+<br/>
+ APOS EXECUCAO<br/>
+<br/>
+Tabela de Escalonamento: (NIVEL PRIORIDADE: PROCESS ID)<br/>
+0: NULL<br/>
+1: NULL<br/>
+2: NULL<br/>
+3: 1 -> 9<br/>
+4: 3<br/>
+5: NULL<br/>
+6: NULL<br/>
+7: 0 -> 5 -> 7<br/>
+8: NULL<br/>
+9: 2<br/>
+10: 4<br/>
+11: 8<br/>
+12: NULL<br/>
+13: NULL<br/>
+14: 6<br/>
+15: NULL<br/>
+<br/>
+Tabela de IO: (DISPOSITIVO: PROCESS ID)<br/>
+0: NULL<br/>
+1: NULL<br/>
+2: NULL<br/>
+3: NULL<br/>
+4: NULL<br/>
+5: NULL<br/>
+6: NULL<br/>
+7: NULL<br/>
+<br/>
+TERMINAR O I0:<br/>
+Escalonador (FINAL) POS LIBERACAO DE IO:<br/>
+0: NULL<br/>
+1: NULL<br/>
+2: NULL<br/>
+3: 1 -> 9<br/>
+4: 3<br/>
+5: NULL<br/>
+6: NULL<br/>
+7: 0 -> 5 -> 7<br/>
+8: NULL<br/>
+9: 2<br/>
+10: 4<br/>
+11: 8<br/>
+12: NULL<br/>
+13: NULL<br/>
+14: 6<br/>
+15: NULL<br/>
+<br/>
+IO:<br/>
+0: NULL<br/>
+1: NULL<br/>
+2: NULL<br/>
+3: NULL<br/>
+4: NULL<br/>
+5: NULL<br/>
+6: NULL<br/>
+7: NULL<br/>
